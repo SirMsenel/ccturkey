@@ -1,0 +1,43 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center Turkey</title>
+    <link rel="stylesheet" href="static/static.css">
+</head>
+<body>
+    <!--! header start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="static/img/logo.avif" alt="logo"/>
+        </a>
+        <nav class="navbar"> 
+        <a href="#" class="active"> Anasayfa </a>
+        <a href="#"> Makaleler </a>
+        <a href="#"> Eğitimler </a>
+        <a href="#"> Çağrı Merkezi </a>
+        <a href="#"> Çağrı Merkezi Similasyon </a>
+        <a href="#"> Hakkında </a>
+        <a href="#"> İletişim </a>
+    </nav>
+    </header>
+      <!--! header end -->
+      <!--! home start -->
+      <div class="nvb">
+      <div class="center">
+        <h1>Call Center Turkeye </h1>
+        <h2>HOŞGELDİNİZ</h2>
+        <div class="buttons">
+        <a href="file:///Users/mehmetsenel/Desktop/websitesi/kaydol.html" ><button>Kaydol</button></a>
+        <a href="file:///Users/mehmetsenel/Desktop/websitesi/giris%CC%A7.html"><button>GirişYap</button></a>
+        <a href= "{% url 'anaweb:Anasayfa' %}" ><button>Anasayfa</button></a>
+    </div>
+    </div>
+    </div>
+
+      <!--! home end -->
+</body>
+</html>
