@@ -123,3 +123,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+LOGİN_REDIRECT_URL = "anaweb:Anasayfa"
+LOGOUT_REDIRECT_URL = "anaweb:login"
+
+ 

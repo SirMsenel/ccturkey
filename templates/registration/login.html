@@ -1,0 +1,11 @@
+
+    {% if user.is_authenticated%}
+        <h2 style="padding: 10px;">Hoşgeldin {{user.username}} </h2>
+    {%else%}
+        <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Submit</button>
+        </form>
+    {%endif%}
+

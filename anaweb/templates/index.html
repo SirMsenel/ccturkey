@@ -31,8 +31,8 @@
         <h1>Call Center Turkeye </h1>
         <h2>HOŞGELDİNİZ</h2>
         <div class="buttons">
-        <a href="file:///Users/mehmetsenel/Desktop/websitesi/kaydol.html" ><button>Kaydol</button></a>
-        <a href="file:///Users/mehmetsenel/Desktop/websitesi/giris%CC%A7.html"><button>GirişYap</button></a>
+        <a href="{% url 'anaweb:authView' %}" ><button>Kaydol</button></a>
+        <a href="{% url 'login' %}"><button>GirişYap</button></a>
         <a href= "{% url 'anaweb:Anasayfa' %}" ><button>Anasayfa</button></a>
     </div>
     </div>
