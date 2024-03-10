@@ -1,13 +1,23 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
-
+from .models import slider
+from .models import Ekibimiz
+from .models import Galeri
 
 # Create your views here.
 
 @login_required
 def Anasayfa(request):
-    return render(request,"anasayfa.html")
+    sliderdata = slider.objects.all()
+    ekibimizdata = Ekibimiz.objects.all()
+    Galeridata = Galeri.objects.all()
+    context = {
+        'slider' : sliderdata,
+        'Ekibimiz' : ekibimizdata,
+        'Galeri' : Galeridata
+    }
+    return render(request,"anasayfa.html",context)
 
 
 def home(request):
